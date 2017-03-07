@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master">
+
+    <metal:block fill-slot="content-core">
+        <h2 i18n:translate="impersonate">Impersonate</h2>
+        <h5 i18n:translate="impersonate_warning">This is an admin-only form for impersonating other users. Please use it wisely.</h5>
+        <br />
+
+        <form method="post" tal:define="errors view/errors | nothing" action="@@impersonate">
+            <div tal:define="error errors/username | nothing;
+                    username request/username | nothing;"
+                    tal:attributes="class python: error and 'field error' or 'field'">
+                <label i18n:translate="form_choose_user_label">Target user:</label>
+                <div tal:condition="error" i18n:translate="form_choose_error">User "<p tal:replace="error" i18n:name="from_choose_user"></p>" does not exist.</div>
+                <input name='username' id='username' type='text' size="30" tal:attributes="value username;" i18n:attributes="value"/>
+                <input name="impersonate" type='submit' value='Impersonate' i18n:attributes="value"/>
+            </div>
+        </form>
+
+        <table>
+            <tr><th i18n:translate="list_users">Available Users</th><th i18n:translate="list_users_fullname">Fullname</th></tr>
+            <tr tal:repeat="user view/users">
+                <td tal:content="user/username" />
+                <td tal:content="user/fullname" />
+            </tr>
+        </table>
+        <br />
+
+    </metal:block>
+
+</html>
+

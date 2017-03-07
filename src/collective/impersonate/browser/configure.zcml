@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.impersonate">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="collective.impersonate.interfaces.ICollectiveImpersonateLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.impersonate"
+      type="plone"
+      directory="static"
+      />
+
+  <browser:page
+      name="impersonate"
+      for="plone.app.layout.navigation.interfaces.INavigationRoot"
+      class=".impersonate.Impersonate"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>
