@@ -4,7 +4,10 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Fix issue with Lineage subsites, where the `many_users` property couldn't be resolved due to a wrong adapter context.
+- Add support for Plone 5.2 and Python 3
+  [cillianderoiste]
+
+  - Fix issue with Lineage subsites, where the `many_users` property couldn't be resolved due to a wrong adapter context.
   [thet]
 
 - Added French translation
