@@ -16,6 +16,9 @@ Changelog
 - upgrade to Plone 5.0.10
   [tkimnguyen]
 
+- tweak Travis xvfb start
+  [tkimnguyen]
+
 
 1.0.1 (2017-03-07)
 ------------------
