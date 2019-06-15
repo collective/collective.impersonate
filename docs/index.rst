@@ -42,10 +42,8 @@ How to Stop Impersonating a User
 
 Log out to stop impersonating a user. You can use Log Out in the personal menu toolbar button.
 
-.. figure:: impersonate_logout.png
+.. image:: impersonate_logout.png
     :alt: screenshot showing how to stop impersonating a user
     :scale: 100 %
-
-    Screenshot showing how to stop impersonating a user
 
 
