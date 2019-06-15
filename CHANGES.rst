@@ -10,7 +10,7 @@ Changelog
 - add Impersonate personal menu item for Manager role
   [tkimnguyen]
 
-- fix buildout, isort fixes, flake8 fixes
+- fix buildout, isort fixes, flake8 fixes, Travis fixes
   [tkimnguyen]
 
 
