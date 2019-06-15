@@ -1,10 +1,16 @@
 Changelog
 =========
 
-1.0.2 (unreleased)
-------------------
+1.1 (unreleased)
+----------------
 
 - add user documentation
+  [tkimnguyen]
+
+- add Impersonate personal menu item for Manager role
+  [tkimnguyen]
+
+- fix buildout, isort fixes, flake8 fixes
   [tkimnguyen]
 
 
