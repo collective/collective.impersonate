@@ -13,6 +13,9 @@ Changelog
 - fix buildout, isort fixes, flake8 fixes, Travis fixes
   [tkimnguyen]
 
+- upgrade to Plone 5.0.10
+  [tkimnguyen]
+
 
 1.0.1 (2017-03-07)
 ------------------
