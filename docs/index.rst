@@ -17,23 +17,18 @@ For example, if your Plone site is at https://mysite.com, navigate to https://my
 
 You will see a form that displays the users on your site.
 
-.. figure:: impersonate_form.png
+.. image:: impersonate_form.png
     :alt: screenshot of the @@impersonate form
     :scale: 100 %
-
-    Screenshot of the @@impersonate form
-
 
 In the "Target user" field, enter the ID of the user you want to impersonate, then press the Impersonate button.
 
 You will see the name of the impersonated user appear on the personal menu toolbar button in the bottom left corner of
 your browser window.
 
-.. figure:: impersonating.png
+.. image:: impersonating.png
     :alt: screenshot of Plone while impersonating a user
     :scale: 100 %
-
-    Screenshot of Plone while impersonating a user
 
 Site Interactions
 -----------------
