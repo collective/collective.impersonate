@@ -29,13 +29,13 @@ COLLECTIVE_IMPERSONATE_FIXTURE = CollectiveImpersonateLayer()
 
 COLLECTIVE_IMPERSONATE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVE_IMPERSONATE_FIXTURE,),
-    name='CollectiveImpersonateLayer:IntegrationTesting'
+    name='CollectiveImpersonateLayer:IntegrationTesting',
 )
 
 
 COLLECTIVE_IMPERSONATE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_IMPERSONATE_FIXTURE,),
-    name='CollectiveImpersonateLayer:FunctionalTesting'
+    name='CollectiveImpersonateLayer:FunctionalTesting',
 )
 
 
@@ -43,7 +43,7 @@ COLLECTIVE_IMPERSONATE_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
         COLLECTIVE_IMPERSONATE_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE
+        z2.ZSERVER_FIXTURE,
     ),
-    name='CollectiveImpersonateLayer:AcceptanceTesting'
+    name='CollectiveImpersonateLayer:AcceptanceTesting',
 )

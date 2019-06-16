@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
-from plone import api
 from collective.impersonate.testing import COLLECTIVE_IMPERSONATE_INTEGRATION_TESTING  # noqa
+from plone import api
 
 import unittest
 
@@ -48,4 +48,5 @@ class TestUninstall(unittest.TestCase):
         from collective.impersonate.interfaces import \
             ICollectiveImpersonateLayer
         from plone.browserlayer import utils
-        self.assertNotIn(ICollectiveImpersonateLayer, utils.registered_layers())
+        self.assertNotIn(ICollectiveImpersonateLayer,
+                         utils.registered_layers())
