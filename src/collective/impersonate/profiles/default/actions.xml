@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <action-provider name="portal_actions"/>
+ <object name="user" meta_type="CMF Action Category">
+  <property name="title">User actions</property>
+  <object name="impersonate" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Impersonate</property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/@@impersonate</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="permissions">
+    <element value="Manage Site"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="logout" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Log out</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/logout</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is not None</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+ </object>
+</object>
