@@ -11,9 +11,11 @@ How to Impersonate a User
 
 You must be logged in as a user with Manager or Site Administrator role.
 
-Use the address bar of your web browser to navigate to the `@@impersonate` view at the root of your Plone site.
+Use the Impersonate item in your personal menu at the bottom of the toolbar.
 
-For example, if your Plone site is at https://mysite.com, navigate to https://mysite.com/@@impersonate
+.. image:: impersonate_menu_item.png
+    :alt: screenshot of the Impersonate menu item
+    :scale: 100 %
 
 You will see a form that displays the users on your site.
 

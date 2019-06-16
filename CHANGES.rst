@@ -4,6 +4,9 @@ Changelog
 1.1.dev0 (unreleased)
 ---------------------
 
+- update docs to show Impersonate portal action
+  [tkimnguyen]
+
 - add user documentation
   [tkimnguyen]
 
