@@ -19,6 +19,9 @@ Changelog
 - tweak Travis xvfb start
   [tkimnguyen]
 
+- fix test buildout
+  [tkimnguyen]
+
 
 1.0.1 (2017-03-07)
 ------------------
