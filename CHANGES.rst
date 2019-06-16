@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.1.dev0 (unreleased)
----------------------
+1.1 (2019-06-15)
+----------------
 
 - update docs to show Impersonate portal action
   [tkimnguyen]
