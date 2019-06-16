@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """@@impersonate view handler."""
 
+from plone import api
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone import api
 
 
 class Impersonate(BrowserView):
