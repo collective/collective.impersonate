@@ -25,11 +25,9 @@ and then running ``bin/buildout``
 Usage
 -----
 
-Install then head to http://<YOUR-PLONE-SITE>/@@impersonate. Enter a valid
-user id and click Impersonate.
+See the `docs`_ folder for instructions on how to use this add-on.
 
-Logout when you are finished.
-
+.. _docs: docs/index.rst
 
 License
 -------
