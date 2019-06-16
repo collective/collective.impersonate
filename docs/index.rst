@@ -17,7 +17,8 @@ Use the Impersonate item in your personal menu at the bottom of the toolbar.
     :alt: screenshot of the Impersonate menu item
     :scale: 100 %
 
-You will see a form that displays the users on your site.
+You will see a form that displays the users on your site (their user IDs are in the Available Users column, and their
+full names are in the Fullname column).
 
 .. image:: impersonate_form.png
     :alt: screenshot of the @@impersonate form

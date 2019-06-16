@@ -4,7 +4,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- upgrade to Plone 5.1.5, add 'Framework :: Plone :: Addon' pypi classifier, tweak docs
+  [tkimnguyen]
 
 
 1.1 (2019-06-15)
