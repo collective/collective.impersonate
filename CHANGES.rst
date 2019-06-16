@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.1 (unreleased)
+1.1.1 (2019-06-16)
 ------------------
 
 - upgrade to Plone 5.1.5, add 'Framework :: Plone :: Addon' pypi classifier, tweak docs

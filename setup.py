@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.impersonate',
-    version='1.1.1.dev0',
+    version='1.1.1',
     description='Allow administrator to impersonate another user, for '
                 'debugging purposes.',
     long_description=long_description,
