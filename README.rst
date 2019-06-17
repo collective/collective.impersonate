@@ -30,6 +30,15 @@ See the `docs`_ folder (or `on GitHub`_) for instructions on how to use this add
 .. _docs: docs/index.rst
 .. _on GitHub: https://github.com/collective/collective.impersonate/blob/master/docs/index.rst
 
+
+Wishlist
+--------
+
+- display users in batches (for sites with many users)
+
+- autocomplete with search select2 widget for choosing the user to impersonate
+
+
 License
 -------
 
