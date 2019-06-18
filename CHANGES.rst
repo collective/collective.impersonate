@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.1.2 (unreleased)
-------------------
+1.2 (unreleased)
+----------------
 
-- Nothing changed yet.
+- lists available users only if the "Many users?" box in Users and Groups control panel is not checked
+  [tkimnguyen]
 
 
 1.1.1 (2019-06-16)

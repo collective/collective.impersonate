@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """@@impersonate view handler."""
 
+from Acquisition import aq_inner
 from plone import api
+from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.component import getAdapter
 
 
 class Impersonate(BrowserView):
@@ -35,5 +38,10 @@ class Impersonate(BrowserView):
         for user in api.user.get_users():
             results.append({'username': user.id,
                             'fullname': user.getProperty('fullname')})
-
         return results
+
+    @property
+    def many_users(self):
+        return getAdapter(aq_inner(self.context),
+                          IUserGroupsSettingsSchema,
+                          ).many_users
