@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2 (unreleased)
+1.2 (2019-06-18)
 ----------------
 
 - lists available users only if the "Many users?" box in Users and Groups control panel is not checked
