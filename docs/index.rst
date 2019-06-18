@@ -61,7 +61,7 @@ form will not list the users on your site.
 Instead, it will show a link to the Users and Groups search that you can
 use to look up a user and their ID to enter into the "Enter user ID" field.
 
-.. image:: impersonate_form_many_users.pgn
+.. image:: impersonate_form_many_users.png
     :alt: screenshot of the @@impersonate form when "Many users" setting is on
     :scale: 100 %
 
