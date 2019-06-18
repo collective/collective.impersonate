@@ -17,14 +17,13 @@ Use the Impersonate item in your personal menu at the bottom of the toolbar.
     :alt: screenshot of the Impersonate menu item
     :scale: 100 %
 
-You will see a form that displays the users on your site (their user IDs are in the Available Users column, and their
-full names are in the Fullname column).
+You will see a form that displays the users on your site, listing user IDs and full names.
 
 .. image:: impersonate_form.png
     :alt: screenshot of the @@impersonate form
     :scale: 100 %
 
-In the "Target user" field, enter the ID of the user you want to impersonate, then press the Impersonate button.
+In the "Enter user ID" field, enter the ID of the user you want to impersonate, then press the Impersonate button.
 
 You will see the name of the impersonated user appear on the personal menu toolbar button in the bottom left corner of
 your browser window.
@@ -49,4 +48,20 @@ Log out to stop impersonating a user. You can use Log Out in the personal menu t
     :alt: screenshot showing how to stop impersonating a user
     :scale: 100 %
 
+Sites With Many Users
+---------------------
+
+If your site has the "Many users" box checked in the Users and Groups control panel's Settings tab, the `@@impersonate`
+form will not list the users on your site.
+
+.. image:: many_users.png
+    :alt: screenshot of the "Many users" setting in Users and Groups control panel
+    :scale: 100 %
+
+Instead, it will show a link to the Users and Groups search that you can
+use to look up a user and their ID to enter into the "Enter user ID" field.
+
+.. image:: impersonate_form_many_users.pgn
+    :alt: screenshot of the @@impersonate form when "Many users" setting is on
+    :scale: 100 %
 
