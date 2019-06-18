@@ -34,8 +34,6 @@ See the `docs`_ folder (or `on GitHub`_) for instructions on how to use this add
 Wishlist
 --------
 
-- display users in batches (for sites with many users)
-
 - autocomplete with search select2 widget for choosing the user to impersonate
 
 

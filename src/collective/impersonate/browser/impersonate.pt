@@ -4,8 +4,9 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       metal:use-macro="context/main_template/macros/master">
 
-    <metal:block fill-slot="content-core">
-        <h2 i18n:translate="impersonate">Impersonate</h2>
+    <metal:block fill-slot="content-core"
+                 tal:define="portal_state context/@@plone_portal_state;
+                             navRoot portal_state/portal_url;">
         <h5 i18n:translate="impersonate_warning">This is an admin-only form for impersonating other users. Please use it wisely.</h5>
         <br />
 
@@ -13,21 +14,38 @@
             <div tal:define="error errors/username | nothing;
                     username request/username | nothing;"
                     tal:attributes="class python: error and 'field error' or 'field'">
-                <label i18n:translate="form_choose_user_label">Target user:</label>
+                <label i18n:translate="form_choose_user_label">Enter user ID:</label>
                 <div tal:condition="error" i18n:translate="form_choose_error">User "<p tal:replace="error" i18n:name="from_choose_user"></p>" does not exist.</div>
                 <input name='username' id='username' type='text' size="30" tal:attributes="value username;" i18n:attributes="value"/>
                 <input name="impersonate" type='submit' value='Impersonate' i18n:attributes="value"/>
             </div>
         </form>
 
+      <div tal:condition="not: view/many_users">
         <table>
-            <tr><th i18n:translate="list_users">Available Users</th><th i18n:translate="list_users_fullname">Fullname</th></tr>
-            <tr tal:repeat="user view/users">
-                <td tal:content="user/username" />
-                <td tal:content="user/fullname" />
-            </tr>
+          <tr>
+            <th i18n:translate="list_users">User ID</th>
+            <th i18n:translate="list_users_fullname">Full name</th>
+          </tr>
+          <tr tal:repeat="user view/users">
+            <td tal:content="user/username" />
+            <td tal:content="user/fullname" />
+          </tr>
         </table>
+      </div>
+
+      <div tal:condition="view/many_users">
         <br />
+        <p>
+          <span i18n:translate="to_search_for_a_user">To search for a user, use the </span>
+          <a i18n:translate="users_and_groups_control_panel"
+             tal:attributes="href python: navRoot + '/@@usergroup-userprefs'"
+             target="_blank">
+            Users and Groups control panel
+          </a>
+        </p>
+      </div>
+
 
     </metal:block>
 
