@@ -4,7 +4,8 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added French translation
+  [laulaz]
 
 
 1.2 (2019-06-18)

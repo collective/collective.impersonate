@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.impersonate\n"
+"POT-Creation-Date: 2019-07-01 13:40+0000\n"
+"PO-Revision-Date: 2016-01-04 08:14+0000\n"
+"Last-Translator: Laurent Lasudry <laurent.lasudry@affinitic.be>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.impersonate\n"
+"X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
+"Language: fr\n"
+
+#: ../browser/impersonate.pt:21
+msgid "Impersonate"
+msgstr "Incarner cet utilisateur"
+
+#: ../configure.zcml:21
+msgid "Installs the collective.impersonate add-on."
+msgstr "Installe le module d'incarnation d'un utilisateur"
+
+#: ../configure.zcml:30
+msgid "Uninstalls the collective.impersonate add-on."
+msgstr "Désinstalle le module d'incarnation d'un utilisateur"
+
+#: ../configure.zcml:21
+msgid "collective.impersonate"
+msgstr ""
+
+#: ../configure.zcml:30
+msgid "collective.impersonate (uninstall)"
+msgstr ""
+
+#. Default: "User \"${from_choose_user}\" does not exist."
+#: ../browser/impersonate.pt:19
+msgid "form_choose_error"
+msgstr "L'utilisateur \"${from_choose_user}\" n'existe pas."
+
+#. Default: "Enter user ID:"
+#: ../browser/impersonate.pt:18
+msgid "form_choose_user_label"
+msgstr "Entrez l'identifiant d'utilisateur:"
+
+#. Default: "This is an admin-only form for impersonating other users. Please use it wisely."
+#: ../browser/impersonate.pt:11
+msgid "impersonate_warning"
+msgstr "Ce formulaire est réservé aux administrateurs pour permettre la prise de contrôle (incarnation) d'un utilisateur. Utilisez le avec prudence."
+
+#. Default: "User ID"
+#: ../browser/impersonate.pt:28
+msgid "list_users"
+msgstr "Identifiant"
+
+#. Default: "Full name"
+#: ../browser/impersonate.pt:29
+msgid "list_users_fullname"
+msgstr "Nom complet"
+
+#. Default: "To search for a user, use the"
+#: ../browser/impersonate.pt:41
+msgid "to_search_for_a_user"
+msgstr "Pour chercher un utilisateur, utiliez le"
+
+#. Default: "Users and Groups control panel"
+#: ../browser/impersonate.pt:42
+msgid "users_and_groups_control_panel"
+msgstr "Panneau de contrôle Utilisateurs et Groupes"

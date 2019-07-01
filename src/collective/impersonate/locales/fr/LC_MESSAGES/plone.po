@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plone\n"
+"POT-Creation-Date: 2019-07-01 13:40+0000\n"
+"PO-Revision-Date: 2019-07-01 12:34+0000\n"
+"Last-Translator: Laurent Lasudry <laurent.lasudry@affinitic.be>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
+"Language: fr\n"
+
+#: ../profiles/default/actions.xml
+#: ../profiles/uninstall/actions.xml
+msgid "Impersonate"
+msgstr "Incarner un utilisateur"
+
+#: ../profiles/default/actions.xml
+#: ../profiles/uninstall/actions.xml
+msgid "Log out"
+msgstr "Se déconnecter"
