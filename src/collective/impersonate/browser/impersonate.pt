@@ -6,7 +6,8 @@
 
     <metal:block fill-slot="content-core"
                  tal:define="portal_state context/@@plone_portal_state;
-                             navRoot portal_state/portal_url;">
+                             navRoot portal_state/portal_url;"
+                 i18n:domain="collective.impersonate">
         <h5 i18n:translate="impersonate_warning">This is an admin-only form for impersonating other users. Please use it wisely.</h5>
         <br />
 
