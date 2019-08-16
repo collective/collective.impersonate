@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """@@impersonate view handler."""
 
-from Acquisition import aq_inner
 from plone import api
 from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
 from Products.Five.browser import BrowserView
@@ -42,6 +41,6 @@ class Impersonate(BrowserView):
 
     @property
     def many_users(self):
-        return getAdapter(aq_inner(self.context),
+        return getAdapter(api.portal.get(),
                           IUserGroupsSettingsSchema,
                           ).many_users
