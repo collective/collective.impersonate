@@ -46,7 +46,7 @@ COLLECTIVE_IMPERSONATE_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
         COLLECTIVE_IMPERSONATE_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        zserver.ZSERVER_FIXTURE
+        zserver.ZSERVER_FIXTURE,
     ),
     name='CollectiveImpersonateLayer:AcceptanceTesting',
 )
