@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Fix issue with Lineage subsites, where the `many_users` property couldn't be resolved due to a wrong adapter context.
+  [thet]
+
 - Added French translation
   [laulaz]
 
