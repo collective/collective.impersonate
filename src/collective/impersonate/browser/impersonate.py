@@ -2,7 +2,11 @@
 """@@impersonate view handler."""
 
 from plone import api
-from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
+try:
+    from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
+except ImportError:
+    # Plone 4.3 compatibility
+    from plone.app.controlpanel.usergroups import IUserGroupsSettingsSchema
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getAdapter

@@ -18,6 +18,9 @@ Changelog
 
 - minor markup cleanup [ajung]
 
+- Plone 4.3 compatibility
+  [petschki]
+
 
 1.2 (2019-06-18)
 ----------------
