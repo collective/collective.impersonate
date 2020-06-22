@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Use explicit dependency on Products.GenericSetup >= 1.8.2
+  [laulaz]
+
 - Fix issue with Lineage subsites, where the `many_users` property couldn't be resolved due to a wrong adapter context.
   [thet]
 
