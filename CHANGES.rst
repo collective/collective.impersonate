@@ -13,6 +13,8 @@ Changelog
 - Added French translation
   [laulaz]
 
+- minor markup cleanup [ajung]
+
 
 1.2 (2019-06-18)
 ----------------

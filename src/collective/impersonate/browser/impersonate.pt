@@ -23,15 +23,18 @@
         </form>
 
       <div tal:condition="not: view/many_users">
-        <table>
-          <tr>
-            <th i18n:translate="list_users">User ID</th>
-            <th i18n:translate="list_users_fullname">Full name</th>
-          </tr>
-          <tr tal:repeat="user view/users">
-            <td tal:content="user/username" />
-            <td tal:content="user/fullname" />
-          </tr>
+        <table class="listing">
+          <caption i18n:translate="">User accounts</caption>
+          <tbody>
+            <tr>
+              <th i18n:translate="list_users">User ID</th>
+              <th i18n:translate="list_users_fullname">Full name</th>
+            </tr>
+            <tr tal:repeat="user view/users">
+              <td tal:content="user/username" />
+              <td tal:content="user/fullname" />
+            </tr>
+          </tbody>
         </table>
       </div>
 
