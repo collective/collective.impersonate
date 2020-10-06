@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Add support for Plone 5.2 and Python 3
+  [cillianderoiste]
+
 - Use explicit dependency on Products.GenericSetup >= 1.8.2
   [laulaz]
 

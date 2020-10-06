@@ -5,9 +5,12 @@ from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
-from plone.testing import z2
 
-import collective.impersonate
+
+try:
+    from plone.testing import zserver
+except ImportError:
+    from plone.testing import z2 as zserver
 
 
 class CollectiveImpersonateLayer(PloneSandboxLayer):
@@ -18,6 +21,7 @@ class CollectiveImpersonateLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
+        import collective.impersonate
         self.loadZCML(package=collective.impersonate)
 
     def setUpPloneSite(self, portal):
@@ -43,7 +47,7 @@ COLLECTIVE_IMPERSONATE_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
         COLLECTIVE_IMPERSONATE_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE,
+        zserver.ZSERVER_FIXTURE,
     ),
     name='CollectiveImpersonateLayer:AcceptanceTesting',
 )
