@@ -24,7 +24,7 @@ class Impersonate(BrowserView):
 
     def actions(self):
         """Login the user"""
-        if "username" in self.request.keys():
+        if "username" in list(self.request.keys()):
             self.errors = {}
             username = self.request["username"].strip()
             if not api.user.get(username=username):
