@@ -7,11 +7,16 @@ Changelog
 - Add support for Plone 5.2 and Python 3
   [cillianderoiste]
 
-  - Fix issue with Lineage subsites, where the `many_users` property couldn't be resolved due to a wrong adapter context.
+- Use explicit dependency on Products.GenericSetup >= 1.8.2
+  [laulaz]
+
+- Fix issue with Lineage subsites, where the `many_users` property couldn't be resolved due to a wrong adapter context.
   [thet]
 
 - Added French translation
   [laulaz]
+
+- minor markup cleanup [ajung]
 
 
 1.2 (2019-06-18)
