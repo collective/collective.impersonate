@@ -21,6 +21,9 @@ Changelog
 - Plone 4.3 compatibility
   [petschki]
 
+- Minor code cleanup: black, isort, travis fixes.
+  [thet]
+
 
 1.2 (2019-06-18)
 ----------------

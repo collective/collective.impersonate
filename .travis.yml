@@ -7,7 +7,8 @@ cache:
 python:
   - 2.7
 install:
-  - python bootstrap-buildout.py
+  - virtualenv -p `which python` .
+  - bin/pip install -r requirements.txt
   - bin/buildout -N buildout:download-cache=downloads annotate
   - bin/buildout -N buildout:download-cache=downloads
 services:
