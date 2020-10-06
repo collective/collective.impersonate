@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
-from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
+from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
@@ -10,12 +9,12 @@ from plone.app.testing import PloneSandboxLayer
 try:
     from plone.testing import zserver
 except ImportError:
-    from plone.testing import z2 as zserver
+    from plone.testing import z2 as zserver  # noqa: F401
 
 
 class CollectiveImpersonateLayer(PloneSandboxLayer):
 
-    defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
+    defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
         # Load any other ZCML that is required for your tests.
@@ -41,14 +40,4 @@ COLLECTIVE_IMPERSONATE_INTEGRATION_TESTING = IntegrationTesting(
 COLLECTIVE_IMPERSONATE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_IMPERSONATE_FIXTURE,),
     name="CollectiveImpersonateLayer:FunctionalTesting",
-)
-
-
-COLLECTIVE_IMPERSONATE_ACCEPTANCE_TESTING = FunctionalTesting(
-    bases=(
-        COLLECTIVE_IMPERSONATE_FIXTURE,
-        REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        zserver.ZSERVER_FIXTURE,
-    ),
-    name="CollectiveImpersonateLayer:AcceptanceTesting",
 )

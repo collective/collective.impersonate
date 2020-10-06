@@ -5,23 +5,12 @@ cache:
   - eggs
   - downloads
 python:
-  - 2.7
+  - 3.7
 install:
   - virtualenv -p `which python` .
   - bin/pip install -r requirements.txt
   - bin/buildout -N buildout:download-cache=downloads annotate
   - bin/buildout -N buildout:download-cache=downloads
-services:
-  - xvfb
-before_script:
-- firefox -v
 script:
   - bin/code-analysis
   - bin/test
-after_success:
-  - bin/createcoverage
-  - pip install coveralls
-  - coveralls
-notifications:
-  email:
-    - nejc.zupan@gmail.com

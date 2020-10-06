@@ -1,3 +1,1 @@
-setuptools==33.1.1
-zc.buildout==2.9.5
-pypiwin32==219; sys_platform == 'win32'
+-r https://dist.plone.org/release/5.2.2/requirements.txt
