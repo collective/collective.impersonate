@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3 (unreleased)
+1.3 (2020-10-07)
 ----------------
 
 - Add support for Plone 5.2 and Python 3
