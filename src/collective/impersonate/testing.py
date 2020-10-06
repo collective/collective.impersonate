@@ -22,10 +22,11 @@ class CollectiveImpersonateLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import collective.impersonate
+
         self.loadZCML(package=collective.impersonate)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'collective.impersonate:default')
+        applyProfile(portal, "collective.impersonate:default")
 
 
 COLLECTIVE_IMPERSONATE_FIXTURE = CollectiveImpersonateLayer()
@@ -33,13 +34,13 @@ COLLECTIVE_IMPERSONATE_FIXTURE = CollectiveImpersonateLayer()
 
 COLLECTIVE_IMPERSONATE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVE_IMPERSONATE_FIXTURE,),
-    name='CollectiveImpersonateLayer:IntegrationTesting',
+    name="CollectiveImpersonateLayer:IntegrationTesting",
 )
 
 
 COLLECTIVE_IMPERSONATE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_IMPERSONATE_FIXTURE,),
-    name='CollectiveImpersonateLayer:FunctionalTesting',
+    name="CollectiveImpersonateLayer:FunctionalTesting",
 )
 
 
@@ -49,5 +50,5 @@ COLLECTIVE_IMPERSONATE_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         zserver.ZSERVER_FIXTURE,
     ),
-    name='CollectiveImpersonateLayer:AcceptanceTesting',
+    name="CollectiveImpersonateLayer:AcceptanceTesting",
 )
