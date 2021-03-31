@@ -38,7 +38,7 @@ setup(
     keywords="Python Plone",
     author="NiteoWeb Ltd.",
     author_email="info@niteoweb.com",
-    url="https://pypi.python.org/pypi/collective.impersonate",
+    url="https://github.com/collective/collective.impersonate",
     license="GPL version 2",
     packages=find_packages("src", exclude=["ez_setup"]),
     namespace_packages=["collective"],
