@@ -35,7 +35,7 @@ class Impersonate(BrowserView):
                 username, self.context.REQUEST.RESPONSE
             )
 
-            self.request.RESPONSE.redirect(api.portal.get().absolute_url())
+            self.request.RESPONSE.redirect(self.context.absolute_url())
 
     def users(self):
         """List all users on this site."""
