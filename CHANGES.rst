@@ -4,7 +4,8 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix redirect to INavigationRoot after impersonate
+  [petschki]
 
 
 1.4 (2021-12-11)
