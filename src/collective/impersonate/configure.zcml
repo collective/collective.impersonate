@@ -6,7 +6,7 @@
 
   <i18n:registerTranslations directory="locales" />
 
-  <includeDependencies package="." />
+  <include package="plone.api" />
 
   <include package=".browser" />
 
