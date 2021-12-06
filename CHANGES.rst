@@ -4,7 +4,8 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Plone 6 compatibility -> remove <includeDependencies />
+  [petschki]
 
 
 1.3 (2020-10-07)
