@@ -25,10 +25,9 @@ and then running ``bin/buildout``
 Usage
 -----
 
-See the `docs`_ folder (or `on GitHub`_) for instructions on how to use this add-on.
+See the `docs`_ folder for instructions on how to use this add-on.
 
-.. _docs: docs/index.rst
-.. _on GitHub: https://github.com/collective/collective.impersonate/blob/master/docs/index.rst
+.. _docs: https://github.com/collective/collective.impersonate/blob/master/docs/index.rst
 
 
 Wishlist
