@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4 (unreleased)
+1.4 (2021-12-11)
 ----------------
 
 - Plone 6 compatibility -> remove <includeDependencies />
