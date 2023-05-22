@@ -48,12 +48,13 @@ setup(
     namespace_packages=["collective"],
     package_dir={"": "src"},
     include_package_data=True,
+    python_requires=">=3.8",
     zip_safe=False,
     install_requires=[
         "plone.api",
         "setuptools",
         "z3c.jbot",
-        "Products.GenericSetup>=1.8.2",
+        "Products.GenericSetup",
     ],
     extras_require={
         "test": [
