@@ -1,10 +1,16 @@
 Changelog
 =========
 
-1.4.1 (unreleased)
+2.0 (unreleased)
 ------------------
 
+- New action icons (Plone 6 only)
+  [petschki]
+
 - Fix redirect to INavigationRoot after impersonate
+  [petschki]
+
+- Fix action icon setup. Set logout action to Plone 6 default.
   [petschki]
 
 
