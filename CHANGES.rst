@@ -1,10 +1,14 @@
 Changelog
 =========
 
-1.4.2 (unreleased)
-------------------
+2.0 (unreleased)
+----------------
 
-- Nothing changed yet.
+- New action icons (Plone 6 only).
+  [petschki]
+
+- Fix action icon setup. Set logout action to Plone 6 default.
+  [petschki]
 
 
 1.4.1 (2024-10-21)
