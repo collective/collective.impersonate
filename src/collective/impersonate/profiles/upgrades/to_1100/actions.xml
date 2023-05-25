@@ -36,7 +36,7 @@
             i18n:translate=""></property>
          <property name="url_expr">string:${globals_view/navigationRootUrl}/logout</property>
          <property name="link_target"></property>
-         <property name="icon_expr"></property>
+         <property name="icon_expr">string:plone-logout</property>
          <property name="available_expr">python:member is not None</property>
          <property name="permissions">
             <element value="View" />
