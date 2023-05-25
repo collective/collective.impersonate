@@ -29,6 +29,25 @@
       post_handler=".setuphandlers.uninstall"
       />
 
+  <genericsetup:registerProfile
+      name="to_1100"
+      title="collective.impersonate.upgrades (uninstall)"
+      directory="profiles/upgrades/to_1100"
+      description="Upgrade profile for collective.impersonate."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:upgradeSteps
+      profile="collective.impersonate:default"
+      source="1000"
+      destination="1100"
+      >
+    <genericsetup:upgradeDepends
+        title="Setup Impersonate Action and reset default logout action."
+        description=""
+        import_profile="collective.impersonate:to_1100"
+        />
+  </genericsetup:upgradeSteps>
 
   <utility
       factory=".setuphandlers.HiddenProfiles"
