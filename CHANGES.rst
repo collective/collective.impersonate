@@ -4,6 +4,9 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
+- Fix form action URL to support sites published under a subpath
+  [ale-rt]
+
 - Fix redirect to INavigationRoot after impersonate
   [petschki]
 
