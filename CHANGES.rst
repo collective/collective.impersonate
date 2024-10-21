@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0 (unreleased)
+2.0 (2024-10-21)
 ----------------
 
 - New action icons (Plone 6 only).
