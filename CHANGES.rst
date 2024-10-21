@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4.1 (unreleased)
+1.4.1 (2024-10-21)
 ------------------
 
 - Fix form action URL to support sites published under a subpath
