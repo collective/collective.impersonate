@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Installer for the collective.impersonate package."""
 
 from setuptools import find_packages
