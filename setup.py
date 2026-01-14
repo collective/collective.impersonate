@@ -1,6 +1,5 @@
 """Installer for the collective.impersonate package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -24,11 +23,9 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Plone",
+        "Framework :: Plone :: 6.2",
         "Framework :: Plone :: Addon",
-        "Framework :: Plone :: 6.0",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
@@ -39,16 +36,12 @@ setup(
     author_email="info@niteoweb.com",
     url="https://github.com/collective/collective.impersonate",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective"],
-    package_dir={"": "src"},
     include_package_data=True,
-    python_requires=">=3.8",
+    python_requires=">=3.10",
     zip_safe=False,
     install_requires=[
         "plone.api",
         "plone.app.layout",
-        "setuptools",
         "z3c.jbot",
         "Products.GenericSetup",
         "Products.CMFPlone",
