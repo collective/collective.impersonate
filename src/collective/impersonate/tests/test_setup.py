@@ -1,4 +1,5 @@
 """Setup tests for this package."""
+
 from collective.impersonate.testing import COLLECTIVE_IMPERSONATE_INTEGRATION_TESTING
 from plone import api
 
