@@ -47,13 +47,18 @@ setup(
     zip_safe=False,
     install_requires=[
         "plone.api",
+        "plone.app.layout",
         "setuptools",
         "z3c.jbot",
         "Products.GenericSetup",
+        "Products.CMFPlone",
+        "Zope",
     ],
     extras_require={
         "test": [
             "plone.app.testing",
+            "plone.testing",
+            "plone.browserlayer",
         ],
     },
     entry_points="""

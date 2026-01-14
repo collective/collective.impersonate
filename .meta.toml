@@ -4,3 +4,6 @@
 [meta]
 template = "default"
 commit-id = "2.3.1"
+
+[pyproject]
+dependencies_ignores = "['plone.app.controlpanel']"
