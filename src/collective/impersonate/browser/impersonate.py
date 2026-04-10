@@ -2,7 +2,6 @@
 
 from plone import api
 
-
 try:
     from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
 except ImportError:
