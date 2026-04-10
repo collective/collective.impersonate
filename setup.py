@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
 """Installer for the collective.impersonate package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -16,7 +14,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.impersonate",
-    version="2.1.dev0",
+    version="3.0.0.dev0",
     description="Allow administrator to impersonate another user, for "
     "debugging purposes.",
     long_description=long_description,
@@ -25,11 +23,9 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Plone",
+        "Framework :: Plone :: 6.2",
         "Framework :: Plone :: Addon",
-        "Framework :: Plone :: 6.0",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
@@ -40,21 +36,22 @@ setup(
     author_email="info@niteoweb.com",
     url="https://github.com/collective/collective.impersonate",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective"],
-    package_dir={"": "src"},
     include_package_data=True,
-    python_requires=">=3.8",
+    python_requires=">=3.10",
     zip_safe=False,
     install_requires=[
         "plone.api",
-        "setuptools",
+        "plone.app.layout",
         "z3c.jbot",
         "Products.GenericSetup",
+        "Products.CMFPlone",
+        "Zope",
     ],
     extras_require={
         "test": [
             "plone.app.testing",
+            "plone.testing",
+            "plone.browserlayer",
         ],
     },
     entry_points="""

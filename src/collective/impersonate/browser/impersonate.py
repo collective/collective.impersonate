@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """@@impersonate view handler."""
 
 from plone import api
