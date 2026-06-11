@@ -16,7 +16,6 @@ from Products.PluggableAuthService.interfaces.plugins import IAuthenticationPlug
 from zope.component import getAdapter
 
 
-
 class Impersonate(BrowserView):
     """@@impersonate view."""
 
