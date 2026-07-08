@@ -4,7 +4,6 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 
-
 try:
     from plone.testing import zserver
 except ImportError:
