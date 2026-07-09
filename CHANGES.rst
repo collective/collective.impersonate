@@ -4,6 +4,12 @@ Changelog
 3.0.0 (unreleased)
 ------------------
 
+- Generate and set ``auth_token`` JWT cookie alongside the ``__ac`` session
+  cookie when impersonating a user. This ensures impersonation works with
+  Volto and other REST API consumers that authenticate via JWT Bearer tokens
+  rather than the classic Plone session cookie.
+  [avoinea]
+
 - Replace ``pkg_resources`` namespace with PEP 420 native namespace.
   Support only Plone 6.2 and Python 3.10+.
 
