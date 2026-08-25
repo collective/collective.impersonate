@@ -1,7 +1,7 @@
 Changelog
 =========
 
-3.0.0 (unreleased)
+3.0.0 (2026-08-25)
 ------------------
 
 - Remove contributors file. Check git history for contributors.
