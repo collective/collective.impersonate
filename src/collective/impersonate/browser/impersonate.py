@@ -3,7 +3,7 @@
 from plone import api
 
 try:
-    from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
+    from plone.base.interfaces.controlpanel import IUserGroupsSettingsSchema
 except ImportError:
     # Plone 4.3 compatibility
     from plone.app.controlpanel.usergroups import IUserGroupsSettingsSchema
