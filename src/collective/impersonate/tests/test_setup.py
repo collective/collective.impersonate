@@ -28,13 +28,6 @@ class TestSetup(unittest.TestCase):
             is_installed = self.installer.is_product_installed("collective.impersonate")
         self.assertTrue(is_installed)
 
-    def test_browserlayer(self):
-        """Test that ICollectiveImpersonateLayer is registered."""
-        from collective.impersonate.interfaces import ICollectiveImpersonateLayer
-        from plone.browserlayer import utils
-
-        self.assertIn(ICollectiveImpersonateLayer, utils.registered_layers())
-
 
 class TestUninstall(unittest.TestCase):
 
@@ -56,10 +49,3 @@ class TestUninstall(unittest.TestCase):
         else:
             is_installed = self.installer.is_product_installed("collective.impersonate")
         self.assertFalse(is_installed)
-
-    def test_browserlayer_removed(self):
-        """Test that ICollectiveImpersonateLayer is removed."""
-        from collective.impersonate.interfaces import ICollectiveImpersonateLayer
-        from plone.browserlayer import utils
-
-        self.assertNotIn(ICollectiveImpersonateLayer, utils.registered_layers())

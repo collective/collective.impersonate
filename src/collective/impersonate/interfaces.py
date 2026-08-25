@@ -1,7 +1,4 @@
-"""Module where all interfaces, events and exceptions live."""
-
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
-
-
-class ICollectiveImpersonateLayer(IDefaultBrowserLayer):
-    """Marker interface that defines a browser layer."""
+class ICollectiveImpersonateLayer:
+    """Dummy class to let Zope import it while it is uninstalled in upgrade
+    step 1200.
+    """

@@ -4,6 +4,9 @@ Changelog
 3.0.0 (unreleased)
 ------------------
 
+- Cleanup and remove unused code.
+  [thet]
+
 - Run plone-codemod to modernize for Plone 6.2.
   [thet]
 

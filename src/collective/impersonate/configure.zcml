@@ -2,15 +2,11 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
-    i18n_domain="collective.impersonate"
     >
 
   <i18n:registerTranslations directory="locales" />
 
-  <include package="plone.api" />
-
   <include package=".browser" />
-
 
   <genericsetup:registerProfile
       name="default"
@@ -18,7 +14,6 @@
       description="Installs the collective.impersonate add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
-      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
@@ -27,15 +22,22 @@
       description="Uninstalls the collective.impersonate add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/uninstall"
-      post_handler=".setuphandlers.uninstall"
       />
 
   <genericsetup:registerProfile
       name="to_1100"
-      title="collective.impersonate.upgrades (uninstall)"
+      title="collective.impersonate.upgrades"
       description="Upgrade profile for collective.impersonate."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/upgrades/to_1100"
+      />
+
+  <genericsetup:registerProfile
+      name="to_1200"
+      title="collective.impersonate.upgrades"
+      description="Upgrade profile for collective.impersonate."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/upgrades/to_1200"
       />
 
   <genericsetup:upgradeSteps
@@ -47,6 +49,18 @@
         title="Setup Impersonate Action and reset default logout action."
         description=""
         import_profile="collective.impersonate:to_1100"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      profile="collective.impersonate:default"
+      source="1100"
+      destination="1200"
+      >
+    <genericsetup:upgradeDepends
+        title="Remove unused browserlayer."
+        description=""
+        import_profile="collective.impersonate:to_1200"
         />
   </genericsetup:upgradeSteps>
 
