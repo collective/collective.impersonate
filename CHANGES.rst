@@ -4,8 +4,19 @@ Changelog
 3.0.0 (unreleased)
 ------------------
 
+- Remove contributors file. Check git history for contributors.
+  [thet]
+
+- Cleanup and remove unused code.
+  [thet]
+
+- Run plone-codemod to modernize for Plone 6.2.
+  [thet]
+
 - Replace ``pkg_resources`` namespace with PEP 420 native namespace.
   Support only Plone 6.2 and Python 3.10+.
+  [gforcada]
+
 
 2.0 (2024-10-21)
 ----------------

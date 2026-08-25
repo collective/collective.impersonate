@@ -1,26 +1,17 @@
 """@@impersonate view handler."""
 
 from plone import api
-
-try:
-    from Products.CMFPlone.interfaces import IUserGroupsSettingsSchema
-except ImportError:
-    # Plone 4.3 compatibility
-    from plone.app.controlpanel.usergroups import IUserGroupsSettingsSchema
-
+from plone.base.interfaces.controlpanel import IUserGroupsSettingsSchema
 from Products.Five.browser import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getAdapter
 
 
 class Impersonate(BrowserView):
     """@@impersonate view."""
 
-    template = ViewPageTemplateFile("impersonate.pt")
-
     def __call__(self):
         self.actions()
-        return self.template()
+        return super().__call__()
 
     def actions(self):
         """Login the user"""

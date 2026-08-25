@@ -5,7 +5,6 @@ from setuptools import setup
 long_description = "\n\n".join(
     [
         open("README.rst").read(),
-        open("CONTRIBUTORS.rst").read(),
         open("CHANGES.rst").read(),
     ]
 )
@@ -43,17 +42,16 @@ setup(
     zip_safe=False,
     install_requires=[
         "plone.api",
-        "plone.app.layout",
-        "z3c.jbot",
+        "plone.base",
         "Products.GenericSetup",
-        "Products.CMFPlone",
-        "Zope",
+        "zope.component",
+        "zope.i18nmessageid",
+        "zope.interface",
     ],
     extras_require={
         "test": [
             "plone.app.testing",
             "plone.testing",
-            "plone.browserlayer",
         ],
     },
     entry_points="""
