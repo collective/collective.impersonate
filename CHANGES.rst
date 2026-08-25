@@ -4,6 +4,9 @@ Changelog
 3.0.0 (unreleased)
 ------------------
 
+- Remove contributors file. Check git history for contributors.
+  [thet]
+
 - Cleanup and remove unused code.
   [thet]
 
