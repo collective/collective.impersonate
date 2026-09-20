@@ -44,9 +44,7 @@ setup(
         "plone.api",
         "plone.base",
         "Products.GenericSetup",
-        "zope.component",
-        "zope.i18nmessageid",
-        "zope.interface",
+        "Zope",
     ],
     extras_require={
         "test": [
