@@ -27,7 +27,7 @@ Usage
 
 See the `docs`_ folder for instructions on how to use this add-on.
 
-.. _docs: https://github.com/collective/collective.impersonate/blob/master/docs/index.rst
+.. _docs: https://github.com/collective/collective.impersonate/blob/main/docs/index.rst
 
 
 Wishlist
