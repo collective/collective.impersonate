@@ -14,6 +14,60 @@ requires = ["setuptools>=68.2,<83", "wheel"]
 #  """
 ##
 
+# START-MARKER-MANUAL-CONFIG
+# Anything from here until END-MARKER-MANUAL-CONFIG
+# will be kept by plone.meta
+
+[project]
+name = "collective.impersonate"
+version = "3.0.1.dev0"
+description = "Allow administrator to impersonate another user, for debugging purposes."
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Plone",
+    "Framework :: Plone :: 6.2",
+    "Framework :: Plone :: Addon",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+]
+license = "GPL-2.0-only"
+dynamic = ["readme"]
+requires-python = ">=3.11"
+authors = [
+    {name = "NiteoWeb Ltd.",email = "info@niteoweb.com"},
+]
+dependencies = [
+    "Products.GenericSetup",
+    "Zope",
+    "plone.api",
+    "plone.base",
+]
+keywords = ["Python", "Plone"]
+
+[project.entry-points."plone.autoinclude.plugin"]
+target = "plone"
+
+[project.optional-dependencies]
+test = [
+    "plone.app.testing",
+    "plone.testing",
+]
+
+[project.urls]
+Source = "https://github.com/collective/collective.impersonate"
+Issues = "https://github.com/collective/collective.impersonate/issues"
+Changelog = "https://github.com/collective/collective.impersonate/blob/master/CHANGES.rst"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "CHANGES.rst"]}
+# END-MARKER-MANUAL-CONFIG
+
 [tool.isort]
 profile = "plone"
 
